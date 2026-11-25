@@ -3,181 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Currículo e portfólio profissional de Eduarda Freitas.">
-  <title>Currículo | Eduarda Freitas</title>
+  <meta name="description" content="Currículo e portfólio profissional de Eduarda Virgínia Silva de Freitas, bacharela em Direito com atuação em tecnologia, compliance e governança de IA.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Eduarda Virgínia Silva de Freitas | Currículo</title>
   <style>
-    :root {
-      color-scheme: light;
-      --ink: #202a35;
-      --muted: #64748b;
-      --accent: #6d4aff;
-      --paper: #fff;
-      --background: #f3f5fa;
-      --line: #e2e8f0;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--background);
-      color: var(--ink);
-      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-    a { color: var(--accent); }
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 2;
-      background: rgb(255 255 255 / 94%);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(12px);
-    }
-    .nav {
-      max-width: 1000px;
-      margin: auto;
-      padding: 12px 22px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .brand { color: var(--ink); font-weight: 750; text-decoration: none; }
-    .nav-links { display: flex; flex-wrap: wrap; gap: 16px; }
-    .nav-links a { color: var(--muted); font-size: .92rem; text-decoration: none; }
-    .nav-links a:hover, .nav-links a:focus { color: var(--accent); }
-    main { max-width: 900px; margin: 42px auto; padding: 0 22px; }
-    .card {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      box-shadow: 0 12px 38px rgb(15 23 42 / 5%);
-      padding: clamp(24px, 5vw, 52px);
-      margin-bottom: 22px;
-    }
-    .hero { display: grid; grid-template-columns: 1fr 150px; align-items: center; gap: 28px; }
-    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
-    h1 { margin: 8px 0; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1; letter-spacing: -.04em; }
-    h2 { margin: 0 0 20px; font-size: 1.55rem; }
-    h3 { margin: 0 0 4px; font-size: 1.08rem; }
-    p { margin: 8px 0 0; }
-    .muted, time { color: var(--muted); }
-    .photo {
-      width: 140px;
-      aspect-ratio: 1;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: #eeeaff;
-      color: var(--accent);
-      border: 3px solid white;
-      outline: 1px solid var(--line);
-      font-size: .83rem;
-      text-align: center;
-      overflow: hidden;
-    }
-    .photo img { width: 100%; height: 100%; object-fit: cover; }
-    .contact { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 20px; }
-    .contact a { text-decoration: none; }
-    .timeline { border-left: 2px solid #e8e2ff; margin-left: 8px; padding-left: 24px; }
-    .item { position: relative; padding: 0 0 24px; }
-    .item:last-child { padding-bottom: 0; }
-    .item::before {
-      content: "";
-      position: absolute;
-      left: -32px;
-      top: 8px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 4px white;
-    }
-    .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
-    .tags li { border-radius: 999px; background: #f0edff; color: #4933a8; padding: 5px 12px; font-size: .88rem; }
-    footer { padding: 10px 0 34px; text-align: center; color: var(--muted); font-size: .9rem; }
-    @media (max-width: 620px) {
-      .nav { align-items: flex-start; flex-direction: column; gap: 8px; }
-      .nav-links { gap: 8px 14px; }
-      .hero { grid-template-columns: 1fr; }
-      .photo { grid-row: 1; width: 112px; }
-      main { margin-top: 22px; }
-    }
+    :root{--ink:#000;--paper:#fff;--grey:#555;--soft:#f0f0f0;--gap:clamp(1rem,3vw,1.5rem)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6}
+    img,svg{max-width:100%;height:auto}
+    .wrap{max-width:960px;margin:0 auto;padding:0 var(--gap)}
+    header{position:relative;overflow:hidden;padding:clamp(2.2rem,6vw,3.5rem) 0 clamp(1.6rem,4vw,2.4rem);border-bottom:2px solid var(--ink);border-radius:0 0 40px 40px}
+    header::before{content:"";position:absolute;width:min(380px,70vw);aspect-ratio:1;border-radius:52% 48% 63% 37% / 41% 44% 56% 59%;background:var(--soft);right:-12vw;top:-18vw;z-index:0}
+    header .wrap{position:relative;z-index:1}
+    h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.15;margin:0;font-weight:700;overflow-wrap:anywhere}
+    .titulo{margin:.6rem 0 1rem;font-size:clamp(.95rem,2.4vw,1.05rem);font-weight:600;max-width:680px}
+    .contato{display:flex;flex-wrap:wrap;gap:.5rem;font-size:.9rem}
+    .contato span,.contato a{border:1.5px solid var(--ink);border-radius:999px;padding:.25rem .8rem;background:var(--paper);overflow-wrap:anywhere;color:var(--ink);text-decoration:none}
+    nav{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--ink)}
+    nav ul{list-style:none;margin:0 auto;padding:.6rem var(--gap);max-width:960px;display:flex;flex-wrap:nowrap;gap:.45rem;overflow-x:auto;scrollbar-width:none}
+    nav ul::-webkit-scrollbar{display:none}
+    nav a{display:inline-block;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:600;font-size:.88rem;border:1.5px solid var(--ink);border-radius:999px;padding:.3rem .85rem;transition:background .2s,color .2s}
+    nav a:hover,nav a:focus-visible{background:var(--ink);color:var(--paper);outline:none}
+    main{padding:.5rem 0 2rem}
+    section{margin:clamp(2rem,5vw,2.8rem) 0;scroll-margin-top:4.5rem}
+    h2{font-size:clamp(1.2rem,3vw,1.4rem);margin:0 0 1rem;display:flex;align-items:center;gap:.7rem;letter-spacing:-.01em}
+    h2::after{content:"";flex:1;height:2px;background:var(--ink);border-radius:2px}
+    h3{margin:0 0 .5rem;font-size:1rem}
+    .resumo{font-size:1rem;margin:0;padding:clamp(1rem,3vw,1.4rem);border:2px solid var(--ink);border-radius:28px 12px 28px 12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1rem}
+    .card{padding:1rem 1.1rem;border:2px solid var(--ink);border-radius:24px 10px 24px 10px;background:var(--paper)}
+    .tag{display:inline-block;background:var(--ink);color:var(--paper);border-radius:999px;padding:.15rem .6rem;margin:.2rem .2rem .2rem 0;font-size:.82rem;line-height:1.5}
+    .tag.dev{background:var(--paper);color:var(--ink);border:1.5px dashed var(--ink)}
+    .legenda{color:var(--grey);font-size:.84rem;margin:.8rem 0 0}
+    .timeline{position:relative;list-style:none;margin:0;padding:0 0 0 1.9rem}
+    .timeline::before{content:"";position:absolute;left:.5rem;top:.5rem;bottom:.5rem;width:2px;background:var(--ink);border-radius:2px}
+    .timeline>li{position:relative;margin:0 0 1.2rem;padding:1rem 1.1rem;border:2px solid var(--ink);border-radius:20px 10px 20px 10px;background:var(--paper)}
+    .timeline>li::before{content:"";position:absolute;left:-1.7rem;top:1.25rem;width:14px;height:14px;border-radius:50% 40% 55% 45%;background:var(--ink);box-shadow:0 0 0 4px var(--paper)}
+    .data{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.03em;border-bottom:1.5px solid var(--ink);padding-bottom:.1rem}
+    .cargo{margin:.4rem 0 0;font-size:1.05rem;font-weight:700}
+    .empresa{margin:0 0 .3rem;color:var(--grey);font-size:.95rem}
+    ul.bul{margin:.3rem 0 0;padding-left:1.1rem}
+    ul.bul li{margin-bottom:.3rem}
+    .lista{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+    .lista li{padding:.8rem 1rem;border:2px solid var(--ink);border-radius:16px 8px 16px 8px}
+    .lista .sub{color:var(--grey);font-size:.9rem}
+    .opcional>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:.7rem;flex-wrap:wrap}
+    .opcional>summary::-webkit-details-marker{display:none}
+    .opcional>summary h2{margin:0;flex:0 0 auto}
+    .opcional>summary h2::after{display:none}
+    .opcional>summary::after{content:"";flex:1;min-width:2rem;height:2px;background:var(--ink);border-radius:2px;order:2}
+    .opcional>summary .dica{order:3;font-size:.82rem;border:1.5px solid var(--ink);border-radius:999px;padding:.15rem .7rem;white-space:nowrap}
+    .opcional[open]>summary{margin-bottom:1rem}
+    .opcional[open]>summary .dica::after{content:"ocultar"}
+    .opcional:not([open])>summary .dica::after{content:"ler"}
+    .sobre{display:flex;gap:1.3rem;align-items:flex-start;margin-top:.8rem}
+    .sobre>div{flex:1;min-width:0}
+    .foto-placeholder{width:clamp(120px,24vw,160px);aspect-ratio:1;border:2px solid var(--ink);border-radius:18px 8px 18px 8px;display:grid;place-items:center;flex:0 0 auto;background:var(--soft);font-size:2rem;font-weight:bold}
+    .topo{text-align:center;margin-top:1.6rem}
+    .topo a{color:var(--ink);font-weight:600}
+    footer{border-top:2px solid var(--ink);text-align:center;color:var(--grey);font-size:.85rem;padding:1.1rem var(--gap)}
+    @media(max-width:640px){header::before{display:none}.timeline{padding-left:1.6rem}.timeline>li{padding:.9rem}.timeline>li::before{left:-1.45rem}.timeline::before{left:.45rem}.card,.lista li,.resumo{border-radius:14px}.opcional>summary .dica{order:0}.sobre{flex-direction:column;align-items:center}.sobre>div{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}nav a{transition:none}}
+    @media print{ :root{--ink:#000;--paper:#fff;--grey:#333;--soft:#fff}nav,.topo,header::before{display:none}body{background:#fff}.card,.timeline>li{break-inside:avoid}a{color:var(--ink);text-decoration:none}.opcional:not([open])>*:not(summary){display:block}.opcional>summary .dica{display:none}}
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <nav class="nav" aria-label="Navegação principal">
-      <a class="brand" href="#inicio">Eduarda Freitas</a>
-      <div class="nav-links">
-        <a href="#sobre">Quem sou eu</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#formacao">Formação</a>
-        <a href="#habilidades">Habilidades</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="card hero" id="inicio" aria-labelledby="nome">
-      <div>
-        <span class="eyebrow">Currículo profissional</span>
-        <h1 id="nome">Eduarda Freitas</h1>
-        <p class="muted">[Título profissional ou área de atuação]</p>
-        <div class="contact" aria-label="Informações de contato">
-          <a href="mailto:seu-email@exemplo.com">[seu e-mail]</a>
-          <span>[Cidade, Estado]</span>
-          <a href="https://www.linkedin.com/" rel="me">[LinkedIn]</a>
-        </div>
-      </div>
-      <div class="photo" aria-label="Espaço reservado para sua foto">Adicione sua foto</div>
-    </section>
-
-    <section class="card" id="sobre">
-      <h2>Quem sou eu</h2>
-      <p>[Escreva uma apresentação breve sobre sua trajetória, seus interesses profissionais e o que busca neste momento.]</p>
-    </section>
-
-    <section class="card" id="experiencia">
-      <h2>Experiência</h2>
-      <div class="timeline">
-        <article class="item">
-          <h3>[Cargo] — [Empresa]</h3>
-          <time>[Mês/ano] – [Mês/ano ou atual]</time>
-          <p>[Descreva suas principais responsabilidades e realizações.]</p>
-        </article>
-        <article class="item">
-          <h3>[Cargo] — [Empresa]</h3>
-          <time>[Mês/ano] – [Mês/ano]</time>
-          <p>[Descreva suas principais responsabilidades e realizações.]</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="card" id="formacao">
-      <h2>Formação</h2>
-      <div class="timeline">
-        <article class="item">
-          <h3>[Curso ou formação] — [Instituição]</h3>
-          <time>[Ano de início] – [Ano de conclusão ou previsão]</time>
-          <p>[Informações complementares, se aplicável.]</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="card" id="habilidades">
-      <h2>Habilidades</h2>
-      <ul class="tags">
-        <li>[Habilidade]</li>
-        <li>[Ferramenta]</li>
-        <li>[Idioma]</li>
-      </ul>
-    </section>
-
-    <section class="card" aria-label="Download do currículo">
-      <h2>Currículo em PDF</h2>
-      <p>Adicione o arquivo <code>curriculo.pdf</code> à raiz do projeto para habilitar o download.</p>
-    </section>
-  </main>
-  <footer>Currículo de Eduarda Freitas · Atualize os campos entre colchetes antes de publicar.</footer>
+<header><div class="wrap"><h1>Eduarda Virgínia Silva de Freitas</h1><p class="titulo">Bacharela em Direito | Compliance e Governança de IA | Desenvolvimento de Agentes com Python e LLMs</p><div class="contato"><span>Recife, PE</span><a href="tel:+5581983140935">Telefone e WhatsApp: (81) 98314-0935</a><a href="mailto:eduardafreitastec@gmail.com">eduardafreitastec@gmail.com</a><a href="https://www.linkedin.com/in/eduardafreitas1" rel="me">linkedin.com/in/eduardafreitas1</a></div></div></header>
+<nav aria-label="Seções do currículo"><ul><li><a href="#quem-sou-eu">Quem sou eu</a></li><li><a href="#resumo">Resumo</a></li><li><a href="#competencias">Competências</a></li><li><a href="#experiencia">Experiência</a></li><li><a href="#formacao">Formação</a></li><li><a href="#idiomas">Idiomas</a></li></ul></nav>
+<main class="wrap">
+<section id="quem-sou-eu"><details class="opcional"><summary><h2>Quem sou eu</h2><span class="dica" aria-label="Expandir ou recolher apresentação"></span></summary><div class="sobre"><div class="foto-placeholder" role="img" aria-label="Espaço reservado para a foto de Eduarda">EF</div><div><p class="resumo">Tenho 28 anos e minha trajetória começou em estágios e cargos jurídicos, onde aprendi rigor com prazos, documentos e atenção aos detalhes. Hoje direciono essa bagagem para a área de tecnologia.</p><p class="resumo" style="margin-top:1rem">Sou apaixonada por tecnologia e gosto de estar por dentro das inovações, entendendo como elas funcionam e como podem ser usadas com responsabilidade. É esse interesse que me leva a unir a construção de agentes de inteligência artificial ao compliance e à proteção de dados.</p><p class="resumo" style="margin-top:1rem">Fora do trabalho, meu tempo livre é dividido entre a leitura, algumas partidas de Valorant e a companhia da Mel, minha cachorra caramela.</p></div></div></details></section>
+<section id="resumo"><h2>Resumo profissional</h2><p class="resumo">Sou bacharela em Direito e tenho experiência com processos jurídicos, governança institucional e implantação de sistemas. Atuo na interseção entre tecnologia e regulação: mapeio processos, parametrizo sistemas e treino usuários para a adoção das soluções. Estou em transição para o desenvolvimento de agentes de inteligência artificial e para o compliance de sistemas de IA, com base em LGPD, testes de API e qualidade de software.</p></section>
+<section id="competencias"><h2>Competências</h2><div class="grid"><div class="card"><h3>Tecnologia e qualidade</h3><span class="tag">Testes de API</span><span class="tag">Qualidade de software</span><span class="tag">Migração de dados</span><span class="tag">MySQL</span><span class="tag">Parametrização de sistemas</span></div><div class="card"><h3>Regulatório e jurídico</h3><span class="tag">LGPD</span><span class="tag">Lei 14.133/2021</span><span class="tag">Processo ético-disciplinar</span><span class="tag">Análise de peças e jurisprudência</span></div><div class="card"><h3>Processos e operações</h3><span class="tag">Mapeamento de processos</span><span class="tag">Treinamento de usuários</span><span class="tag">Gestão documental</span><span class="tag">Acompanhamento pós-implantação</span></div><div class="card"><h3>Em desenvolvimento</h3><span class="tag dev">Python</span><span class="tag dev">LLMs e engenharia de prompts</span><span class="tag dev">RAG e agentes de IA</span><span class="tag dev">Governança de IA</span><span class="tag dev">Computação em nuvem</span></div></div><p class="legenda">Itens com borda tracejada estão em desenvolvimento.</p></section>
+<section id="experiencia"><h2>Linha do tempo profissional</h2><ol class="timeline">
+<li><span class="data">01/2025 – 09/2026</span><p class="cargo">Consultora de Implantação</p><p class="empresa">Kurier Tecnologia</p><ul class="bul"><li>Mapeei e documentei processos de clientes, garantindo que as soluções implantadas atendessem às necessidades específicas de cada operação.</li><li>Parametrizei e ajustei sistemas conforme os requisitos do cliente, assegurando funcionalidade e eficiência.</li><li>Preparei e conduzi treinamentos para usuários finais, promovendo a adoção eficaz das ferramentas.</li><li>Realizei acompanhamento pós-implantação, oferecendo suporte e garantindo a satisfação do cliente.</li></ul></li>
+<li><span class="data">11/2024 – 01/2025</span><p class="cargo">Assistente de Contratos II</p><p class="empresa">Sistema FIEPE</p><ul class="bul"><li>Supervisionei serviços executados e medições de pagamento junto às empresas contratadas.</li><li>Elaborei relatórios diários e semanais e controlei a documentação administrativa e os EPIs.</li><li>Realizei fiscalização e prestação de contas dos contratos.</li></ul></li>
+<li><span class="data">08/2021 – 10/2024</span><p class="cargo">Assistente do Tribunal de Ética e Disciplina</p><p class="empresa">Ordem dos Advogados do Brasil (OAB)</p><ul class="bul"><li>Analisei e dei andamento a processos ético-disciplinares, auxiliando na defesa prévia e atuando na comissão de admissibilidade.</li><li>Controlei prazos e diligências, como dilação e contagem de prazos, e emiti certidões processuais.</li><li>Atendi o público presencialmente e por telefone e assessorei relatores nas sessões de julgamento.</li></ul></li>
+<li><span class="data">10/2019 – 08/2021</span><p class="cargo">Estagiária Assistente Jurídica</p><p class="empresa">Urbano Vitalino Advogados</p><ul class="bul"><li>Auxiliei em cálculos processuais e em solicitações de pagamento de processos cíveis (condenações, acordos, honorários periciais).</li><li>Emiti guias judiciais e organizei documentos, acompanhando processos e diligências em regime presencial e home office.</li></ul></li>
+<li><span class="data">03/2018 – 06/2019</span><p class="cargo">Estagiária em Tecnologia e Direito</p><p class="empresa">Kurier Tecnologia</p><ul class="bul"><li>Atuei com LGPD e na análise e classificação de peças jurídicas, como sentenças, despachos e retificações.</li><li>Identifiquei e classifiquei jurisprudências aplicadas a processos e elaborei e retifiquei petições iniciais.</li><li>Atuei com treinamento de IA.</li></ul></li>
+<li><span class="data">08/2017 – 03/2018</span><p class="cargo">Estagiária Jurídica</p><p class="empresa">CCAMIG – Câmara de Conciliação e Mediação</p><ul class="bul"><li>Elaborei acordos e atas, mediei as partes e conciliei conflitos de natureza cível e tributária.</li><li>Atendi o público e trabalhei com propostas, juros e pagamentos.</li></ul></li>
+<li><span class="data">08/2016 – 09/2017</span><p class="cargo">Jovem Aprendiz</p><p class="empresa">Hospital Memorial São José</p><ul class="bul"><li>Apoiei atividades administrativas do RH: arquivo, processos seletivos e documentação admissional.</li><li>Atuei na recepção e no atendimento ao cliente.</li></ul></li>
+<li><span class="data">03/2015 – 03/2016</span><p class="cargo">Estagiária Administrativa</p><p class="empresa">Fundação Joaquim Nabuco (Fundaj)</p><ul class="bul"><li>Monitorei a entrada e saída de documentos e protocolei toda a documentação.</li><li>Atendi e recepcionei o público e mantive a comunicação entre as unidades Apipucos e Casa Forte.</li></ul></li>
+</ol></section>
+<section id="formacao"><h2>Formação e certificações</h2><ul class="lista"><li><strong>Engenharia de Teste e Qualidade de Software</strong><br><span class="sub">Cesar School · Concluído em 10/2025</span></li><li><strong>Administração de MySQL</strong><br><span class="sub">Senac · Concluído em 12/2023</span></li><li><strong>LGPD e suas aplicações</strong><br><span class="sub">FIEPE · Concluído em 12/2024</span></li><li><strong>Gestão de Projetos com Scrum</strong><br><span class="sub">Educavy · Concluído em 12/2022</span></li><li><strong>Computação em Cloud</strong><br><span class="sub">Rede Cidadã (Projeto Start) · Em andamento</span></li><li><strong>Licitações e contratos administrativos (Lei 14.133/2021)</strong><br><span class="sub">Ordem dos Advogados do Brasil · Concluído em 05/2024</span></li><li><strong>Capacitação Nacional em Processo Disciplinar</strong><br><span class="sub">Ordem dos Advogados do Brasil · Concluído</span></li><li><strong>Bacharelado em Direito</strong><br><span class="sub">Faculdade Católica Imaculada Conceição do Recife (FICR) · 01/2017 – 12/2022</span></li><li><strong>Técnico em Administração</strong><br><span class="sub">Senac · 08/2016 – 09/2017</span></li></ul></section>
+<section id="idiomas"><h2>Idiomas</h2><ul class="lista"><li><strong>Inglês</strong>: básico</li><li><strong>Espanhol</strong>: intermediário</li></ul></section>
+<p class="topo"><a href="#inicio">Voltar ao topo ↑</a></p>
+</main>
+<footer>Eduarda Virgínia Silva de Freitas · Recife, PE</footer>
+<script>(function(){var d=document.querySelector("#quem-sou-eu details");function abrir(){if(location.hash==="#quem-sou-eu"&&d){d.open=true;}}window.addEventListener("hashchange",abrir);abrir();})();</script>
 </body>
 </html>

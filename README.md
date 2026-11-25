@@ -1,15 +1,19 @@
-# Currículo — Eduarda Freitas
+# Currículo online — Eduarda Virgínia Silva de Freitas
 
-Página navegável de currículo, feita em HTML e CSS, com navegação por seções, linha do tempo e aba “Quem sou eu”.
+Página navegável do currículo, com apresentação pessoal expansível, menu de navegação, linha do tempo profissional, competências, formação e idiomas.
 
-## Como abrir
+## Abrir localmente
 
-Abra `index.html` em um navegador. Não é necessário instalar dependências.
+Abra `index.html` em um navegador. O projeto não requer instalação de dependências.
 
-## Conteúdo a completar
+## Publicar com GitHub Pages
 
-Os dados pessoais e profissionais ainda são marcadores de posição. Substitua-os pelas informações que deseja divulgar e adicione sua foto. O arquivo `curriculo.pdf` também precisa ser fornecido ou gerado antes de estar disponível para download.
+Este repositório está público. Para publicar a página, acesse **Settings → Pages**, escolha **Deploy from a branch**, selecione `main` e a pasta `/ (root)`. Após a publicação, o GitHub Pages exibirá o `index.html`.
 
-## Publicação com GitHub Pages
+## Foto e PDF
 
-Depois de revisar os dados e decidir quais informações pessoais quer tornar públicas, ative o GitHub Pages nas configurações do repositório, selecionando a branch `main` e a pasta `/ (root)`. A página será publicada a partir de `index.html`.
+A área da foto está como marcador visual `EF`; substitua-a por uma foto otimizada antes de publicar, se desejar. O arquivo `curriculo.pdf` ainda não foi fornecido, portanto não está incluído.
+
+## Privacidade
+
+A página contém informações profissionais e dados de contato. Como o repositório é público, essas informações ficam visíveis na internet. Revise os dados e decida se deseja mantê-los publicados.
