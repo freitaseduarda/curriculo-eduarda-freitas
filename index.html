@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículo e portfólio profissional de Eduarda Freitas.">
+  <title>Currículo | Eduarda Freitas</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202a35;
+      --muted: #64748b;
+      --accent: #6d4aff;
+      --paper: #fff;
+      --background: #f3f5fa;
+      --line: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--accent); }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: rgb(255 255 255 / 94%);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    .nav {
+      max-width: 1000px;
+      margin: auto;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { color: var(--ink); font-weight: 750; text-decoration: none; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 16px; }
+    .nav-links a { color: var(--muted); font-size: .92rem; text-decoration: none; }
+    .nav-links a:hover, .nav-links a:focus { color: var(--accent); }
+    main { max-width: 900px; margin: 42px auto; padding: 0 22px; }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 12px 38px rgb(15 23 42 / 5%);
+      padding: clamp(24px, 5vw, 52px);
+      margin-bottom: 22px;
+    }
+    .hero { display: grid; grid-template-columns: 1fr 150px; align-items: center; gap: 28px; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
+    h1 { margin: 8px 0; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1; letter-spacing: -.04em; }
+    h2 { margin: 0 0 20px; font-size: 1.55rem; }
+    h3 { margin: 0 0 4px; font-size: 1.08rem; }
+    p { margin: 8px 0 0; }
+    .muted, time { color: var(--muted); }
+    .photo {
+      width: 140px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #eeeaff;
+      color: var(--accent);
+      border: 3px solid white;
+      outline: 1px solid var(--line);
+      font-size: .83rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .photo img { width: 100%; height: 100%; object-fit: cover; }
+    .contact { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 20px; }
+    .contact a { text-decoration: none; }
+    .timeline { border-left: 2px solid #e8e2ff; margin-left: 8px; padding-left: 24px; }
+    .item { position: relative; padding: 0 0 24px; }
+    .item:last-child { padding-bottom: 0; }
+    .item::before {
+      content: "";
+      position: absolute;
+      left: -32px;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px white;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+    .tags li { border-radius: 999px; background: #f0edff; color: #4933a8; padding: 5px 12px; font-size: .88rem; }
+    footer { padding: 10px 0 34px; text-align: center; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 620px) {
+      .nav { align-items: flex-start; flex-direction: column; gap: 8px; }
+      .nav-links { gap: 8px 14px; }
+      .hero { grid-template-columns: 1fr; }
+      .photo { grid-row: 1; width: 112px; }
+      main { margin-top: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="#inicio">Eduarda Freitas</a>
+      <div class="nav-links">
+        <a href="#sobre">Quem sou eu</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#formacao">Formação</a>
+        <a href="#habilidades">Habilidades</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card hero" id="inicio" aria-labelledby="nome">
+      <div>
+        <span class="eyebrow">Currículo profissional</span>
+        <h1 id="nome">Eduarda Freitas</h1>
+        <p class="muted">[Título profissional ou área de atuação]</p>
+        <div class="contact" aria-label="Informações de contato">
+          <a href="mailto:seu-email@exemplo.com">[seu e-mail]</a>
+          <span>[Cidade, Estado]</span>
+          <a href="https://www.linkedin.com/" rel="me">[LinkedIn]</a>
+        </div>
+      </div>
+      <div class="photo" aria-label="Espaço reservado para sua foto">Adicione sua foto</div>
+    </section>
+
+    <section class="card" id="sobre">
+      <h2>Quem sou eu</h2>
+      <p>[Escreva uma apresentação breve sobre sua trajetória, seus interesses profissionais e o que busca neste momento.]</p>
+    </section>
+
+    <section class="card" id="experiencia">
+      <h2>Experiência</h2>
+      <div class="timeline">
+        <article class="item">
+          <h3>[Cargo] — [Empresa]</h3>
+          <time>[Mês/ano] – [Mês/ano ou atual]</time>
+          <p>[Descreva suas principais responsabilidades e realizações.]</p>
+        </article>
+        <article class="item">
+          <h3>[Cargo] — [Empresa]</h3>
+          <time>[Mês/ano] – [Mês/ano]</time>
+          <p>[Descreva suas principais responsabilidades e realizações.]</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="formacao">
+      <h2>Formação</h2>
+      <div class="timeline">
+        <article class="item">
+          <h3>[Curso ou formação] — [Instituição]</h3>
+          <time>[Ano de início] – [Ano de conclusão ou previsão]</time>
+          <p>[Informações complementares, se aplicável.]</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="habilidades">
+      <h2>Habilidades</h2>
+      <ul class="tags">
+        <li>[Habilidade]</li>
+        <li>[Ferramenta]</li>
+        <li>[Idioma]</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-label="Download do currículo">
+      <h2>Currículo em PDF</h2>
+      <p>Adicione o arquivo <code>curriculo.pdf</code> à raiz do projeto para habilitar o download.</p>
+    </section>
+  </main>
+  <footer>Currículo de Eduarda Freitas · Atualize os campos entre colchetes antes de publicar.</footer>
+</body>
+</html>
