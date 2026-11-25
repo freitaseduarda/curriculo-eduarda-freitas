@@ -1,4 +1,4 @@
-# Currículo online — Eduarda Virgínia Silva de Freitas
+## Currículo online — Eduarda Virgínia Silva de Freitas
 
 Página navegável do currículo, com apresentação pessoal expansível, menu de navegação, linha do tempo profissional, competências, formação e idiomas.
 
